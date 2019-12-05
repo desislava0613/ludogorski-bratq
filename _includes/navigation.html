@@ -1,10 +1,10 @@
 <nav>
     <ul>
-        
+        {% assign navigation_pages = site.pages | sort:"order" %}
 
-        {% for page in site.pages %}
+        {% for page in navigation_pages %}
         {% if page.title %}
-        <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+        <li><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
         {% endif %}
         {% endfor %}
     </ul>
