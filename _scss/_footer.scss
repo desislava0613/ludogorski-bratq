@@ -1,8 +1,49 @@
 .site-footer {
     background-color: black;
+
+    ul {
+        display: flex;
+        justify-content: center;
+
+        @include bp(tablet) {
+            display: block;
+            margin-bottom: 2em;
+            text-align: center;
+        }
+
+        li{
+            margin-top: 1em;
+            padding: 2em;
+            list-style-type: none;
+            text-align: center;
+
+            @include bp(tablet) {
+                padding: 1em 0 0 0;
+                margin: 0;
+            }
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+
+    p {
+        color: white;
+        text-align: center;
+        padding-bottom: 2em;
+    }
+
+    i {
+        color: white;
+        padding-right: 1em;
+        font-size: 1.5em;
+        text-align: center;
+    }
 }
 
-.site-footer ul {
+/* .site-footer ul {
     display: flex;
     justify-content: center;
 }
@@ -30,4 +71,4 @@
     padding-right: 1em;
     font-size: 1.5em;
     text-align: center;
-}
+} */

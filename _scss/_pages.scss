@@ -1,7 +1,9 @@
 .page-начало .site-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    @include bp(desktop){
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;    
+    }
     padding-top: 1em;
     padding: 0 2em;
     text-align: center;
@@ -14,12 +16,19 @@
     position: relative;
     box-shadow: 0 0 2em 0 rgba(0, 0, 0, 0.4);
     margin-bottom: 3em;
+
+    h1 {
+        visibility: hidden;
+    }
+
+    nav {
+        padding: 1em;
+    }
+
 }
 
-.page-начало .site-header h1 {
-    visibility: hidden;
-}
-
-.page-начало .site-header nav {
-    padding: 1em;
+.nav-toggle {
+    position: absolute; /*за да скрием чекбокс */
+    pointer-events: none;
+    opacity: 0;
 }
