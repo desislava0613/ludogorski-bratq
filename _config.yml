@@ -3,7 +3,7 @@
 title: Лудогорски братя
 email: desislava0613@gmail.com
 description: Hi there
-destination: docs
+destination: docs 
 baseurl: "/ludogorski_bratq" 
 twitter_username: desi
 github_username:  desislava0613
@@ -12,6 +12,8 @@ github_username:  desislava0613
 
 plugins:
   - jekyll-feed
+
+    
 
 # Exclude from processing.
 # The following items will not be processed, by default.

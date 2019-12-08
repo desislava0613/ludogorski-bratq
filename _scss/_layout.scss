@@ -100,6 +100,10 @@ body {
 
 
 /* About page */
+
+.site .nav-toggle-label {
+    text-align: center;
+}
 .about-section {
 
 
@@ -115,7 +119,8 @@ body {
             transition: opacity 1.5s ease-out 0.6s;
     
             @include bp(mobile) {
-                width: 50px;
+                width: 100%;
+                height: auto;
             }
         }
     
@@ -155,6 +160,7 @@ body {
 
         @include bp(mobile) {
             width: auto;
+            padding: 0.3em;
         }
         
         h3 {
