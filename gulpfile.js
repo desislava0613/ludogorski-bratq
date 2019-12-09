@@ -21,7 +21,7 @@ gulp.task("sass", function() {
 	;
 });
 
-// Jekyll
+//Jekyll
 // gulp.task("jekyll-dev", function() {
 //	return cp.spawn("bundle", ["exec", "jekyll", "build --baseurl ''"], { stdio: "inherit", shell: true });
 //}); 

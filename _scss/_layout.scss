@@ -25,8 +25,9 @@ body {
        
 
         .news-pic img {
-            width: 400px;
-            height: 100%;
+            width: auto;
+            height: auto;
+            background-size: cover;
             transition: transform 0.2s;
             border-radius: 0.3em;
 
@@ -44,7 +45,6 @@ body {
 
         .card-section {
             background-color:rgb(178, 177, 177);
-            margin: 0 auto;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -55,7 +55,7 @@ body {
                 transform: translateX(-2em);
                 box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.3);
                 background-color: white;
-                padding: 0.5em;
+                padding: 0.3em;
                 z-index: 2;
                 border-radius: 0.3em;
 
@@ -67,7 +67,7 @@ body {
 
                 li {
                     list-style-type: none;
-                    padding: 1.5em;
+                    padding: 1em;
                 }
 
                 a {
@@ -208,4 +208,20 @@ body {
     transform: translateY(0);
     opacity: 1;
     
+}
+
+.gallery {
+    max-width: 75em;
+    margin: 0 auto;
+    padding: 2em 0;
+
+    h2 {
+        text-align: center;
+        padding-bottom: 1em;
+        /* background-image: url(/images/2019/opening/15.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 1em; */
+    }
 }
