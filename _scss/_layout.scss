@@ -34,7 +34,9 @@ body {
             @include bp(mobile) {
                 display: block;
                 margin: 0 auto;
-                
+                width: 100%;
+                height: auto;
+
             }
 
             &:hover {
@@ -49,6 +51,12 @@ body {
             justify-content: center;
             align-items: center;
 
+            
+
+            @include bp(mobile) {
+                text-align: center;
+            }
+
             ul{
 
                 
@@ -58,6 +66,10 @@ body {
                 padding: 0.3em;
                 z-index: 2;
                 border-radius: 0.3em;
+
+                &:hover {
+                    border: 2px solid rgba(0,0,0,0.5);
+                }
 
                 @include bp(mobile) {
                     transform: translateY(-4em);
@@ -92,6 +104,10 @@ body {
 
 .site-news:nth-child(even) .card-section ul {
     margin: 2em -4em 2em 4em;
+
+    @include bp(mobile) {
+        margin: 0 auto;
+    }
 }
 
 
@@ -224,4 +240,30 @@ body {
         background-size: cover;
         margin-bottom: 1em; */
     }
+}
+
+
+/* Contact page */
+
+.upper-contacts {
+    display: flex;
+    justify-content: space-between;
+    max-width: 60em;
+    margin: 0 auto;
+    padding: 3em 0;
+}
+
+.upper-contacts .site-left {
+    align-items: center;
+}
+
+.upper-contacts .site-left ul li {
+    padding: 0.3em 0;
+    list-style-type: none;
+    
+}
+
+.site-contacts .map {
+    border: 2px solid white;
+    margin: 0 auto;
 }
