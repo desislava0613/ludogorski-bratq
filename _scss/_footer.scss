@@ -9,6 +9,7 @@
             display: block;
             margin-bottom: 2em;
             text-align: center;
+            
         }
 
         li{
@@ -16,6 +17,7 @@
             padding: 2em;
             list-style-type: none;
             text-align: center;
+            color: white;
 
             @include bp(tablet) {
                 padding: 1em 0 0 0;
