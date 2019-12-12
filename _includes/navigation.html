@@ -5,7 +5,7 @@
 
         {% for page in navigation_pages %}
         {% if page.title %}
-        <li><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
+        <li><a href="{{ site.baseurl }}{{ page.url }}" id="current">{{ page.title }}</a></li>
         {% endif %}
         {% endfor %}
     </ul>

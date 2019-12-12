@@ -251,19 +251,37 @@ body {
     max-width: 60em;
     margin: 0 auto;
     padding: 3em 0;
+
+    @include bp(mobile) {
+        display: block;
+    }
+
+    .site-left {
+        align-items: center;
+        text-align: center;
+        padding: 1em;
+    }
+
+    ul li {
+        padding: 0.3em 0;
+        list-style-type: none;
+    }
+
+    .site-right {
+        padding: 2em;
+        text-align: center;
+        iframe {
+            border-radius: 0.5em;
+        }
+    }
+    .map {
+        border: 2px solid rgb(124, 124, 124);
+        margin: 0 auto;
+        padding-bottom: 1em;
+    }
 }
 
-.upper-contacts .site-left {
-    align-items: center;
-}
 
-.upper-contacts .site-left ul li {
-    padding: 0.3em 0;
-    list-style-type: none;
-    
-}
 
-.site-contacts .map {
-    border: 2px solid white;
-    margin: 0 auto;
-}
+
+
