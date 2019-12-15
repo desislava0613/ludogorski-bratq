@@ -4,7 +4,8 @@ title: Лудогорски братя
 email: desislava0613@gmail.com
 description: Hi there
 destination: docs
-baseurl: "/ludogorski-bratq" 
+baseurl: "" 
+#baseurl: "/ludogorski-bratq" 
 twitter_username: desi
 github_username:  desislava0613
 
